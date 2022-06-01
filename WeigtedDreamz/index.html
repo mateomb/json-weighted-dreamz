@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Index Head-->
+
+<head>
+  <title>Weighted Dreamz</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="assets/style.css" type="text/css">
+  <link href="vendor/modernizr/modernizr-custom-es6.css" rel="stylesheet" type="text/css" />
+</head>
+<!-- The template which was used for the site was retrieved from https://www.w3schools.com/w3css/default.asp-->
+<!-- Index Body-->
+
+<body>
+  <!-- Modernizer trigger - Hidden - Shown if the browser is out of date -->
+  <div class="modernizr">
+    <h1 class="attention">Attention you are using an out of date browser!</h1>
+    <h2 class="centerText">Please load the webpage in a more modern browser to experience the site as intended.</h2>
+    <h3 class="centerText">The following features cannot be rendered in your current browser: </h3>
+    <ul>
+      <li class="arrow">arrow</li>
+      <li class="es6array">es6array</li>
+      <li class="es6collections">es6collections</li>
+      <li class="es6math">es6math</li>
+      <li class="es6number">es6number</li>
+      <li class="es6object">es6object</li>
+      <li class="es6string">es6string</li>
+      <li class="generators">generators</li>
+      <li class="promises">promises</li>
+      <li class="setclasses">setclasses</li>
+    </ul>
+  </div>
+
+  <div class="upToDate">
+    <!-- Navigation - Sidebar -->
+    <section id="navigation">
+      <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding side-index" id="mySidebar"><br>
+        <a href="javascript:void(0)" onclick="closeSidebar()" class="w3-button w3-hide-large w3-display-topleft">Close
+          Menu</a>
+        <div class="w3-container">
+          <a href="#" class="text-none">
+            <h3 class="w3-padding-64"><b>Weighted<br>Dreamz</b> <img src="assets/logo.png" class="logo-size"></h3>
+          </a>
+        </div>
+        <div class="bar-block">
+          <a href="#showcase" onclick="closeSidebar()" class="bar-item w3-button w3-hover-white">Showcase</a>
+          <a href="#blankets" onclick="closeSidebar()" class="bar-item w3-button w3-hover-white">Weighted Blankets</a>
+          <a href="#team" onclick="closeSidebar()" class="bar-item w3-button w3-hover-white">Team</a>
+          <a href="#pricing" onclick="closeSidebar()" class="bar-item w3-button w3-hover-white">Pricing</a>
+          <a href="#custom" onclick="closeSidebar()" class="bar-item w3-button w3-hover-white">Custom Blanket</a>
+        </div>
+      </nav>
+    </section>
+    <!-- Top menu on small screens -->
+    <header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+      <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="openSidebar()">☰</a>
+      <span>Weighted Dreamz</span>
+    </header>
+
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large cursour-pointer" onclick="closeSidebar()" title="close side menu"
+      id="myOverlay"></div>
+
+    <!-- Main site content -->
+    <div class="w3-main content-start">
+
+      <!--Header Section-->
+      <section id="showcase">
+        <div class="w3-container userDesign topMargin">
+          <h1 class="w3-jumbo"><b>Weighted Dreamz</b></h1>
+
+          <h1 class="w3-xxxlarge w3-text-red"><b>Blanket Showcase</b></h1>
+          <hr class="w3-round userHr">
+        </div>
+
+        <!-- Photo grid (modal) -->
+        <div class="w3-row-padding">
+          <div class="w3-half">
+            <img src="assets/image01.jpg" class="galeryWidth" onclick="onClick(this)"
+              alt="White Weighted Dreamz Blanket Preview">
+            <img src="assets/image02.png" class="galeryWidth" onclick="onClick(this)"
+              alt="Dark Weighted Dreamz Blanket Preview">
+          </div>
+
+          <div class="w3-half">
+            <img src="assets/image03.jpeg" class="galeryWidth" onclick="onClick(this)"
+              alt="Happy Weighted Dreamz Blanket Users">
+            <img src="assets/image04.png" class="galeryWidth" onclick="onClick(this)"
+              alt="Gray Weighted Dreamz Blanket Preview">
+          </div>
+        </div>
+      </section>
+
+      <!-- Modal for full size images on click-->
+      <div id="modal01" class="w3-modal w3-black noPadding" onclick="this.style.display='none'">
+        <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+          <img id="img01" class="w3-image">
+          <p id="caption"></p>
+        </div>
+      </div>
+
+      <!-- Weighted Blankets Description -->
+      <section id="blankets">
+        <div class="w3-container selection-seperation userDesign">
+          <h1 class="w3-xxxlarge w3-text-red"><b>What are Weighted Blankets</b></h1>
+          <hr class="w3-round userHr">
+          <p>Weighted Dreamz is our up and coming company that aims to provide our users with weighted blankets at an
+            affordable price regardless of their location!</p>
+          <p>What are weighted blankets? Weighted blankets have been around for many years. They are used to treat
+            anxiety
+            and after trauma, where they are known as comfort blankets.
+            They are also recommended by therapists and psychologists to help with both psychological and physical
+            problems such as anxiety and insomnia.
+            The blankets are weighted with internal ball weights, it is recommended that the user takes a blanket with
+            ~10% of his body weight.</p>
+        </div>
+      </section>
+
+      <!-- Team & Cards Sections-->
+      <section id="team">
+        <div class="w3-container selection-seperation userDesign">
+          <h1 class="w3-xxxlarge w3-text-red"><b>Our Team</b></h1>
+          <hr class="w3-round userHr">
+          <p>Only the best for You!</p>
+          <p>Our team is dedicated to providing you with the best experience possible, backed by professionals!
+            Although our concept is not new, we have talked to professionals in order to find out what the best approach
+            to designing our blankets is.
+            Sarah Smith and James Burner decided to become part of our small team as psychology experts, constantly
+            giving
+            us their feedback based on what
+            they hear from their clients.</p>
+          <p class="centerText"><b>Expert & User feedback</b></p>
+        </div>
+
+        <!-- User & Expert Story Cards -->
+        <!-- Images used aquired from https://www.envato.com/ -->
+        <div class="w3-row-padding selection-seperation">
+          <!-- Expert Card - Sarah Smith -->
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <img src="assets/counselor-listens-to-client.jpg" alt="Image of Sarah - Therapist" class="galeryWidth">
+              <div class="w3-container">
+                <h3 class="centerText">Sarah Smith</h3>
+                <p class="w3-opacity">Therapist</p>
+                <p>As a therapist, the "big picture" is something I always keep in mind when helping my clients. I have
+                  noticed a trend
+                  among youth that due to technology and other stressors, sometimes they just need a good night's sleep.
+                  This is where Weighted Dreamz come in!</p>
+              </div>
+            </div>
+          </div>
+          <!-- Expert Card - James Burner -->
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <img src="assets/70_1R3A1223.jpg" alt="Image of James - Psychologist" class="galeryWidth">
+              <div class="w3-container">
+                <h3>James Burner</h3>
+                <p class="w3-opacity">Psychologist</p>
+                <p>Finding a solution to a problem is often difficult. A common psychological problem that plagues
+                  people
+                  is anxiety.
+                  Since weighted blankets provide stimulation through hugging, they are often a very affordable and
+                  long-lasting approach to solving this problem.</p>
+              </div>
+            </div>
+          </div>
+          <!--User Card - Mike Rosso-->
+          <div class="w3-col m4 w3-margin-bottom">
+            <div class="w3-light-grey">
+              <img src="assets/sleeping-young-man-morning-blanket-bed-lies_171337-60271.jpg" alt="Image of Mike - User"
+                class="galeryWidth">
+              <div class="w3-container">
+                <h3>Mike Rosso</h3>
+                <p class="w3-opacity">Long time user</p>
+                <p>I have been using a Weighted Dreamz blanket for 3 years now and honestly can not remember my last
+                  sleepless night. I used to lie in bed for hours
+                  Lying in bed for hours playing with my phone until I got bored. But that is no longer the case!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Packages / Pricing Tables Section-->
+      <section id="pricing">
+        <div class="w3-container userDesign selection-seperation">
+          <h1 class="w3-xxxlarge w3-text-red"><b>Pricing</b></h1>
+          <hr class="w3-round userHr">
+          <p>We offer our prefabricated blankets made of the highest quality materials, which you can see in our
+            showcase.
+            However, if you want to change the size, pattern or color of our blankets, you can have your own blanket
+            made!
+            Please note that the production of custom blankets made to measure our standards is very complex, as such
+            they
+            are only available in white.</p>
+        </div>
+        <!-- Prebuild Blanket - Made unavailable in order to force the user to make a custom one -->
+        <div class="w3-row-padding">
+          <div class="w3-half w3-margin-bottom">
+            <ul class="w3-ul w3-light-grey w3-center">
+              <li class="w3-dark-grey w3-xlarge w3-padding-32">Our Design</li>
+              <li class="w3-padding-16">4 Year warranty</li>
+              <li class="w3-padding-16">Black & White</li>
+              <li class="w3-padding-16">No pattern</li>
+              <li class="w3-padding-16">Quality Material</li>
+              <li class="w3-padding-16">
+                <h2>$ 59*</h2>
+                <span class="w3-opacity">+ shipping</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <button class="w3-button w3-grey w3-padding-large w3-hover-black" onclick="outOfStock()">Buy</button>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Custom Blanket - Connected with custom (selection) section -->
+          <div class="w3-half">
+            <ul class="w3-ul w3-light-grey w3-center">
+              <li class="w3-red w3-xlarge w3-padding-32">Custom</li>
+              <li class="w3-padding-16">4 Year warranty</li>
+              <li class="w3-padding-16">White</li>
+              <li class="w3-padding-16">Custom pattern & pattern color</li>
+              <li class="w3-padding-16">Quality Material</li>
+              <li class="w3-padding-16">
+                <h2>$ 79*</h2>
+                <span class="w3-opacity">+ shipping</span>
+              </li>
+              <li class="w3-light-grey w3-padding-24">
+                <a href="#form-blanket" class="text-none"><button
+                    class="w3-button w3-red w3-padding-large w3-hover-black">Make</button></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Custom Blanket - Connected with custom (selection) section -->
+      <section id="custom">
+        <div class="w3-container userDesign selection-seperation">
+          <h1 class="w3-xxxlarge w3-text-red"><b>Custom Build</b></h1>
+          <hr class="w3-round userHr">
+          <p>Here you can make your very own blanket! All you need to do is: Select the size of your blanket, select a
+            pattern that you like and finally the color of the pattern.
+            It's that simple!
+          </p>
+        </div>
+
+        <form id="form-blanket" action="form.html">
+          <fieldset>
+            <div class="form-container">
+              <!-- div for blanket selects -->
+              <div id="div-selects" class="container-item-left">
+                <h1 class="w3-text-red"><b>Blanket Details</b></h1>
+              </div>
+              <!-- div for blanket image -->
+              <div id="div-blanket" class="container-item-right blanket-place">
+                <h1 class="w3-text-red preview"><b>Blanket Preview</b></h1>
+                <img src="assets/undefined-undefined-undefined.png" alt="empty image"
+                  class="blanket-size blanket-place">
+              </div>
+            </div>
+          </fieldset>
+          <input type="submit" value="Proceed to Checkout">
+        </form>
+      </section>
+      <!-- End page content -->
+    </div>
+    <!-- End of Modernizr overlay -->
+  </div>
+
+  <!-- Modernizr Script for dealing with old browsers -->
+  <script src="vendor/modernizr/modernizr-custom-es6.js"></script>
+  <!-- Load the JavaScript file as a module -->
+  <script src="js/app.js" type="module"></script>
+  <!-- Load the JavaScript file used for site interactions-->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Index Head-->
+
+<head>
+  <title>Form Submit</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<!-- The template which was used for the site was retrieved from https://www.w3schools.com/w3css/default.asp-->
+<!-- Index Body-->
+
+<body>
+  <!-- Navigation - Sidebar -->
+  <nav class="w3-sidebar w3-red w3-collapse w3-top w3-large w3-padding side-index" id="mySidebar"><br>
+    <a href="javascript:void(0)" onclick="closeSidebar()" class="w3-button w3-hide-large w3-display-topleft">Close
+      Menu</a>
+    <div class="w3-container">
+      <a href="#" class="text-none">
+        <h3 class="w3-padding-64"><b>Weighted<br>Dreamz</b></h3>
+      </a>
+    </div>
+    <div class="bar-block">
+      <a href="index.html" onclick="closeSidebar()" class="bar-item w3-button w3-hover-white">Return</a>
+    </div>
+  </nav>
+
+  <!-- Main site content -->
+  <div class="w3-main content-start">
+    <div class="w3-container userDesign" id="contact">
+      <h1 class="w3-xxxlarge w3-text-red"><b>Billing information</b></h1>
+      <hr class="w3-round userHr">
+      <p>Do you want to make a custom weighted blanket? Well now you can! Take a look and see what you like.</p>
+      <form id="form-blanket-name">
+        <fieldset class="form-fieldset">
+          <div class="w3-section">
+            <label class="form-label">Address</label>
+            <input class="form-input w3-border" type="text" name="address">
+            <div id="errorAddress" class="form-label"></div>
+          </div>
+          <div class="w3-section">
+            <label class="form-label">City</label>
+            <input class="form-input w3-border" type="text" name="city">
+            <div id="errorCity" class="form-label"></div>
+          </div>
+          <div class="w3-section">
+            <label class="form-label">Postal Code</label>
+            <input class="form-input w3-border" type="text" name="postalcode">
+            <div id="errorCode" class="form-label"></div>
+          </div>
+        </fieldset>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+
+    <!-- Load the JavaScript file as a module -->
+    <script src="js/app.js" type="module"></script>
+    <!-- Load the JavaScript file used for site interactions-->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

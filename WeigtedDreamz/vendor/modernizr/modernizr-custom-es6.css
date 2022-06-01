@@ -1,0 +1,179 @@
+/**
+*   Modernizr CSS if one of the elements below does not work in the browser the CSS
+*   will change the page to show which elemets are not working and dispaly a warning message
+*   To preview this - Open the webpages in Internet Explorer
+*/
+.modernizr ul{
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+}
+
+li{
+    color:black;
+}
+
+.modernizr{
+    display: none;
+}
+
+.no-arrow li.arrow{
+    color: red;
+}
+
+.no-arrow .upToDate{
+    display: none;
+}
+
+
+.no-arrow .modernizr{
+    display: block;
+}
+
+.no-arrow body{
+    background-color:antiquewhite;
+}
+
+.no-es6array li.es6array{
+    color: red;
+}
+
+.no-es6array .upToDate{
+    display: none;
+}
+
+.no-es6array .modernizr{
+    display: block;
+}
+
+.no-es6array body{
+    background-color:antiquewhite;
+}
+
+.no-es6collections li.es6collections{
+    color: red;
+}
+
+.no-es6collections .upToDate{
+    display: none;
+}
+
+.no-es6collections .modernizr{
+    display: block;
+}
+
+.no-es6collections body{
+    background-color:antiquewhite;
+}
+
+.no-es6math li.es6math{
+    color: red;
+}
+
+.no-es6math .upToDate{
+    display: none;
+}
+
+.no-es6math .modernizr{
+    display: block;
+}
+
+.no-es6math body{
+    background-color:antiquewhite;
+}
+
+.no-es6number li.es6number{
+    color: red;
+}
+
+.no-es6number .upToDate{
+    display: none;
+}
+
+.no-es6number .modernizr{
+    display: block;
+}
+
+.no-es6number body{
+    background-color:antiquewhite;
+}
+
+.no-es6object li.es6object{
+    color: red;
+}
+
+.no-es6object .upToDate{
+    display: none;
+}
+
+.no-es6object .modernizr{
+    display: block;
+}
+
+.no-es6object body{
+    background-color:antiquewhite;
+}
+
+.no-es6string li.es6string{
+    color: red;
+}
+
+.no-es6string .upToDate{
+    display: none;
+}
+
+.no-es6string .modernizr{
+    display: block;
+}
+
+.no-es6string body{
+    background-color:antiquewhite;
+}
+
+.no-generators li.generators{
+    color: red;
+}
+
+.no-generators .upToDate{
+    display: none;
+}
+
+.no-generators .modernizr{
+    display: block;
+}
+
+.no-generators body{
+    background-color:antiquewhite;
+}
+
+.no-promises li.promises{
+    color: red;
+}
+
+.no-promises .upToDate{
+    display: none;
+}
+
+.no-promises .modernizr{
+    display: block;
+}
+
+.no-promises body{
+    background-color:antiquewhite;
+}
+
+.no-setclasses li.setclasses{
+    color: red;
+}
+
+.no-setclasses .upToDate{
+    display: none;
+}
+
+.no-setclasses .modernizr{
+    display: block;
+}
+
+.no-setclasses body{
+    background-color:antiquewhite;
+}
